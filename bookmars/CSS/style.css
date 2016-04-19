@@ -1,0 +1,18 @@
+.tabs ul{
+	list-style: none;
+	padding: 0;
+
+
+}
+
+.tabs li{
+	display: inline-block;
+}
+
+.tabs .selected{
+	background-color: red;
+}
+
+.tabs div{
+	display:none;
+}

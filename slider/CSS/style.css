@@ -1,0 +1,16 @@
+body{
+	background-color: green;
+}
+
+.slider ul{
+	list-style: none;
+
+}
+
+.slider li{
+	display: none;
+
+}
+.slider .visible{
+	display: inline-block;
+}

@@ -1,0 +1,10 @@
+.QA h1{
+	margin: 0;
+	padding: 15px;
+}
+
+.QA p{
+	display:none;
+	margin:0;
+	padding-left:15px; 
+}

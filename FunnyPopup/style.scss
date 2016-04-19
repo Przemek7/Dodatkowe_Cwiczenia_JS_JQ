@@ -1,0 +1,146 @@
+*{
+	margin:0;
+	padding:0;
+	border-size:border-box;
+}
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body{
+	font-family:lato;
+}
+
+.container{
+	background:url('images/tlo6.png') no-repeat;
+	background-size:100% 100%;
+	//background:black;
+	width:100%;
+	height:630px;
+	.text{
+		width:30%;
+		height:100px;
+		margin-left:100px;
+		margin-top: 50px;
+		display:inline-block;
+		@media screen and(max-width:800px)
+		{
+			margin:0;
+		}
+		h2{
+			
+			color:orange;
+			font-size:50px;
+
+		}
+		h3{
+			
+			color:white;
+			font-size:60px;
+		}
+	}
+	.open-popup-lampa{
+	width:25px;
+	height:25px;
+	background:white;
+	left:50%;
+	margin-left:-12px;
+	top:190px;
+	position:absolute;
+	border-radius:50%;
+	//z-index:1;
+	opacity:0.2;
+		&:hover{
+			opacity:0.5;
+			cursor:pointer;
+		}
+	}
+	.popupBackground{
+	position:fixed;
+	background-color: black;
+	width:100%;
+	height: 100%;
+	left:0;
+	top: 0;
+	opacity: 0.9;
+	z-index: 1000;
+	display: none;
+	text-align:center;
+		.text{
+			width:800px;
+			height:100px;
+			margin-top:300px;
+		
+			h1{
+				color:white;
+				font-family:Indie Flower;
+				font-size:40px;
+
+			}
+		}.zarowka-container{
+		position:absolute;
+		z-index:1500;
+		display:none;
+		top:100px;
+		left:563px;
+			.zarowka{
+				width:125px;
+				height:125px;
+				background:url('images/zarowka2.png');
+				border-radius:50%;
+				&:hover{
+					cursor:pointer;
+				}
+			}
+		}
+
+	}
+	.road-sign{
+	width:260px;
+	height:150px;
+	margin-top:155px;
+	margin-left:160px;
+		.top-sign{
+			width:100%;
+			height:50px;
+			background:green;
+			border:1px solid black;
+			border-radius:5px;
+			box-shadow: 1px -1px 2px 0px grey,inset 195px 137px 185px -88px rgba(0,0,0,0.75);
+			&:hover{
+				background:#195005;
+				box-shadow: 1px -1px 2px 0px grey;
+			}
+			p{
+				font-family: lato;
+				color:white;
+				text-align: center;
+				font-size:13px;
+				padding:12px;
+				opacity:0.7;
+				letter-spacing: 2px;
+			}
+		}
+		.left-leg-sign{
+			width:7px;
+			height:100px;
+			background:black;
+			margin-left:50px;
+			float:left;
+			border-right:1px solid #5E6470;
+			opacity:0.7;
+		}
+		.right-leg-sign{
+			@extend .left-leg-sign;
+			margin-left:120px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
